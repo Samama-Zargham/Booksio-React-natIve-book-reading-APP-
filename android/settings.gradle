@@ -1,0 +1,20 @@
+rootProject.name = 'Booksio'
+include ':@react-native-community_async-storage'
+project(':@react-native-community_async-storage').projectDir = new File(rootProject.projectDir, '../node_modules/@react-native-community/async-storage/android')
+apply from: file("../node_modules/@react-native-community/cli-platform-android/native_modules.gradle"); applyNativeModulesSettingsGradle(settings)
+include ':app'
+//vector icon...
+include ':react-native-vector-icons'
+project(':react-native-vector-icons').projectDir = new File(rootProject.projectDir, '../node_modules/react-native-vector-icons/android')
+//Linear gradeient...
+include ':react-native-linear-gradient'
+project(':react-native-linear-gradient').projectDir = new File(rootProject.projectDir, '../node_modules/react-native-linear-gradient/android')\
+// AsyncStorage
+include ':@react-native-async-storage'
+project(':@react-native-async-storage').projectDir = new File(rootProject.projectDir, '../node_modules/@react-native-async-storage/async-storage/android')
+// border animation
+include ':react-native-animated-border'
+project(':react-native-animated-border').projectDir = new File(rootProject.projectDir, 	'../node_modules/react-native-animated-border/android')
+// audio 
+include ':react-native-android-text-to-speech'
+project(':react-native-android-text-to-speech').projectDir = new File(rootProject.projectDir, 	'../node_modules/react-native-android-text-to-speech/android')
